@@ -1,0 +1,336 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif; 
+    line-height: 1.6;
+    color: #FEE;
+    background-color: #FFE6F2;
+    
+}
+
+header {
+    font-family:  'Lora', serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    border-bottom: 1px solid #ddd;
+    padding: 50px;
+}
+
+
+.hl2{position: absolute; left: 180px;
+text-align: center;
+font-size: 1em;
+color: #b38b50;
+}
+
+
+
+.logo{position: absolute; right: 10px;}
+
+.logo1{position: absolute; left: 20px;}
+.logo2{position: absolute; left: 140px;
+ 
+color:  #b38b50;}
+.logo2 h1{
+  font-size: 1.6em;
+}
+
+
+
+
+nav ul {
+    border: 2px solid #FFF; /* Cambia el grosor y el color del borde */
+    padding: 10px; /* Espaciado interno */
+    list-style-type: none;
+   
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #b38b50;
+}
+
+.section {
+    padding: 30px;
+    margin: 30px auto;
+    background-color:white;/* Fondo rosa suave semi-transparente */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombras suaves */
+    width: 75%;
+    border: 1px solid #ddd; /* Borde del div */
+    border-radius: 20px; /* Esquinas redondeadas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section:hover {
+    transform: translateY(-5px); /* Efecto hover elegante */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+.NJ2 {
+   
+    color: #000000;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    font-weight: bold; /* Negritas */
+    
+}
+.N1{color:#000000;
+    font-size: 1em;
+    margin-bottom: 10px;
+    font-weight: bold; 
+
+}
+
+
+
+
+p {
+    color: black;
+    line-height: 1.8;
+    font-size: 1.1em;
+    font-weight: bold; /* Negritas */
+
+}
+
+
+
+
+
+
+.BLANCO{
+    color: #FFF;
+}
+.social {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.social img {
+    width: 40px; /* Tamaño del icono más grande */
+    height: 40px;
+    vertical-align: middle;
+    margin: 0 15px; /* Espacio entre los iconos */
+    transition: transform 0.3s ease; /* Animación para hover */
+}
+.social img:hover {
+    transform: scale(1.1); /* Efecto hover para agrandar un poco */
+}
+.social a {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-left: 10px;
+    font-weight: bold; /* Negritas */
+}
+.social a:hover {
+    color: #b56576; /* Color elegante para hover */
+}
+footer {
+    font-family:  'Lora', serif;
+    background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+/*CONTAC */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border:solid;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -35%);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 400px){
+      .form { width:90%;}
+  }
+  
+  .title {
+    font-size: 28px;
+    color: #b38b50;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #b38b50;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: #b38b50;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message, .signin {
+    font-size: 14px;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: royalblue;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    background-color: #b38b50;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+  .submit:hover {
+    background-color: #808000;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+  
+  .HOLA{
+    padding: 280PX;
+  }
+  
+  /* Estilos para pantallas pequeñas */
+        @media (max-width: 600px) {
+            header {
+                padding: 20px 10px; /* Reducir el padding */
+            }
+            
+            nav ul {
+                flex-direction: column; /* Cambiar a columna para móviles */
+                align-items: center; /* Centrar los elementos */
+            }
+            
+            .section {
+                width: 95%; /* Ampliar ligeramente el ancho en móviles */
+            }
+        }
+
+        /* Estilos para pantallas más grandes */
+        @media (min-width: 601px) {
+            header {
+                flex-direction: row; /* Alinear en fila en pantallas grandes */
+                justify-content: space-between; /* Espaciar elementos en el header */
+            }
+            
+            nav ul {
+                flex-direction: row; /* Alinear elementos horizontalmente */
+                gap: 30px; /* Espaciado mayor para pantallas grandes */
+            }
+
+            .section {
+                width: 75%; /* Ajustar ancho para pantallas más grandes */
+            }
+        }

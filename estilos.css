@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+ body {
+            font-family: 'Lora', serif;
+            line-height: 1.6;
+            background-color: #FFF;
+        }
+        header, section, footer {
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            flex-direction: column; /* Cambiar a columna para tener logo y título en vertical */
+            align-items: center; /* Centrar los elementos del header */
+            padding: 10px;
+            background-color: #000;
+            border-bottom: 1px solid #ddd;
+            color: #b38b50;
+        }
+        .logo1 img {
+            width: 82px; /* Ajustar tamaño del logo */
+            height: 79px; /* Ajustar tamaño del logo */
+        }
+        .logo2 {
+            color: #b38b50;
+            text-align: center; /* Centrar el texto */
+        }
+        .logo2 h1 {
+            font-size: 1.6em;
+        }
+        nav {
+            margin-top: 10px; /* Espacio entre el título y el menú */
+        }
+        nav ul {
+            border: 2px solid #FFF; /* Cambia el grosor y el color del borde */
+            padding: 10px; /* Espaciado interno */
+            list-style-type: none;
+            display: flex; /* Asegura que los enlaces estén en línea */
+            gap: 20px; /* Espacio entre los enlaces */
+            margin: 0; /* Eliminar margen */
+        }
+        nav ul li {
+            flex: 1; /* Permitir que cada enlace ocupe espacio */
+            text-align: center; /* Centrar el texto */
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #FFF;
+            font-weight: 400;
+            font-size: 14px;
+        }
+        nav ul li a:hover {
+            color: #b38b50;
+        }
+        .ofertas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .oferta {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 15px;
+            width: calc(33.33% - 20px); /* Ancho para 3 columnas */
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .hl1 {
+            background-color: #F39;
+            border: black;
+            border-radius: 50px;
+            color: #FFF;
+            padding: 1px;
+            text-align: center; /* Centrar el texto */
+        }
+        .oferta img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .precio-original {
+            text-decoration: line-through;
+            color: #888;
+            display: block;
+            margin-top: 10px;
+        }
+        .precio-oferta {
+            color: #FF0984;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        button {
+            background-color: #ff0984;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #F3C;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+        }
+
+        /* Media Queries para Móviles */
+        @media (max-width: 600px) {
+            .oferta {
+                width: calc(50% - 20px); /* Dos imágenes por fila en móviles */
+            }
+        }

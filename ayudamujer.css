@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+header {
+    font-family:  'Lora', serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    border-bottom: 1px solid #ddd;
+    padding: 50px;
+}
+
+.navbar {
+    position: absolute; right: 40px;
+    
+}
+
+.logo{position: absolute; left: 50px;
+    background-color: #000;
+}
+.logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #FFF;
+    background-color: #000;
+}
+
+
+
+.menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 1rem;
+}
+
+.menu {
+    border: 2px solid #FFF; /* Cambia el grosor y el color del borde */
+    padding: 10px; /* Espaciado interno */
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 400;
+    font-size: 14px
+}
+.menu a:hover {
+    color: #b38b50
+}
+
+footer {
+    font-family:  'Lora', serif;
+    background-color: #333;
+            color: white;
+            text-align: center;
+}

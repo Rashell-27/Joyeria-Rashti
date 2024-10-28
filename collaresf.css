@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+body, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo h1 {
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #b38b50;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color:#FFE6F2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 1rem;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}

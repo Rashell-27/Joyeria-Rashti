@@ -1,0 +1,184 @@
+@charset "utf-8";
+/* CSS Document */
+/* Reset básico para eliminar márgenes y relleno predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family:  'Lora', serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    border-bottom: 1px solid #ddd;
+    padding: 50px;}
+.navbar{
+    position: absolute; right: 60px;
+}
+
+
+
+
+.logo{position: absolute; left: 30px;
+}
+
+
+.hl2 h2{
+    font-size: 2em;
+    
+    color: #FFF ;
+    margin: 0;
+}
+
+
+
+
+.menu {
+    border: 2px solid #FFF; /* Cambia el grosor y el color del borde */
+    padding: 10px; /* Espaciado interno */
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 400;
+    font-size: 14px
+}
+.menu a:hover {
+    color: #b38b50
+}
+
+.hero-section {
+    padding:180px;
+
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+background-image: url("imagenes/Menu\ hombre.jpg");
+display: flex; /* Utiliza flexbox */
+flex-direction: column; /* Coloca los divs uno encima del otro */
+justify-content: center; /* Centra los divs verticalmente */
+align-items: flex-start; /* Alinea los divs al inicio del contenedor (lado izquierdo) */
+height: 100vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventana */
+padding-left: 30px; 
+font-weight: bold;
+}
+
+
+
+
+.div h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.div1, .div2 {
+    padding: 10px;
+
+    /* Para visualizar mejor los divs */
+    margin-bottom: 20px; /* Espacio entre los divs */
+  }
+  .div1 h2{
+    font-size: 1.7em;
+  }
+  .div1 p{
+    font-size: 1.2em;}
+
+
+
+.btn-group {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    background-color:blue;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {background-color:blue;;}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: white;
+}
+.product {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.product p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+.product .btn {
+    background-color: #333;
+}
+
+.product .btn:hover{background-color:#666;}
+
+.barra {background-color:#333;
+}
+
+.list:hover{background-color:#666;}
+ 
+ .cabe{background-color:#009;
+ padding-top:15px;
+ padding-left:15px;
+ padding-bottom:15px;
+ padding-right:15px;
+ font-size:24px;
+ background-color:#FFF;}
+
+.promo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f5d4d2;
+}
+
+
+
+footer {
+    font-family:  'Lora', serif;
+    background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+}
